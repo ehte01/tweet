@@ -106,7 +106,7 @@ export default function Profile() {
     }
 
     const handleMessage = () => {
-        axios.post("http://localhost:8000/conversations", { senderId: user?._id, receiverId: account?._id })
+        axios.post("https://twitt-anu4.onrender.com/conversations", { senderId: user?._id, receiverId: account?._id })
             .then(res => navigate("/messages"))
     }
 

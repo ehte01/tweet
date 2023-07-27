@@ -15,7 +15,7 @@ export const getMessages = async (chatId) => {
 }
 
 export const postMessage = async (message) => {
-    const res = await axios.post("http://localhost:8000/messages", message)
+    const res = await axios.post("https://twitt-anu4.onrender.com/messages", message)
 
     return res.data
 }

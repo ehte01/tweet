@@ -29,7 +29,7 @@ export default function Messages() {
     }, [dispatch])
 
     useEffect(() => {
-        socket.current = io("ws://localhost:8000");
+        socket.current = io("ws://twitt-anu4.onrender.com");
         socket.current.on("getMessage", (data) => {
             setArrivalMessage({
                 sender: data.senderId,

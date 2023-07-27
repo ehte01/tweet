@@ -13,7 +13,7 @@ export default function Conversations(props) {
 
         const friendId = props.conversation.members.find((member) => member !== user._id)
 
-        axios.get("http://localhost:8000/users/" + friendId)
+        axios.get("https://twitt-anu4.onrender.com/users/" + friendId)
             .then(res => setFriend(res.data))
             .catch(err => console.log(err))
 
