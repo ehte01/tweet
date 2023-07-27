@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = "http://localhost:8000/users"
+const API_URL = "https://twitt-anu4.onrender.com/users"
 
 export const getUser = async (username) => {
     const response = await axios.get(API_URL + "/username/" + username)

@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = "http://localhost:8000/tweets"
+const API_URL = "https://twitt-anu4.onrender.com"
 
 export const createTweet = async (tweet, accessToken) => {
     const response = await axios.post(API_URL + "/create", tweet, { headers: { 'x-access-token': accessToken } })

@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = "http://localhost:8000"
+const API_URL = "https://twitt-anu4.onrender.com"
 
 export const getConversations = async (userId) => {
     const res = await axios.get(`${API_URL}/conversations/${userId}`)
