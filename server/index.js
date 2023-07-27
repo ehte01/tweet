@@ -1,14 +1,23 @@
-const express = require('express');
-import dotenv from 'dotenv'
-import cors from 'cors'
-import config from './config/index.js'
-import http from 'http'
-import chat from './chat/chat.js'
-import userRouter from './routes/user-routes.js'
-import authRouter from './routes/auth-routes.js'
-import tweetRouter from './routes/tweet-routes.js'
-import conversationRouter from './routes/conversation-routes.js'
-import messageRouter from './routes/message-routes.js'
+const express = require('express')
+const dotenv = require('dotenv');
+const cors = require('cors');
+const config = require('./config/index.js');
+const http = require('http');
+const chat = require('./chat/chat.js')
+const userRouter = require('./routes/user-routes.js');
+const authRouter = require('./routes/auth-routes.js');
+const tweetRouter = require('./routes/tweet-routes.js');
+const conversationRouter = require('./routes/conversation-routes.js');
+const messageRouter = require('./routes/message-routes.js');
+// import cors from 'cors'
+// import config from './config/index.js'
+// import http from 'http'
+// import chat from './chat/chat.js'
+// import userRouter from './routes/user-routes.js'
+// import authRouter from './routes/auth-routes.js'
+// import tweetRouter from './routes/tweet-routes.js'
+// import conversationRouter from './routes/conversation-routes.js'
+// import messageRouter from './routes/message-routes.js'
 const port = 8000;
 
 dotenv.config()
